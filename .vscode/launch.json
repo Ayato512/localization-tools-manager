@@ -1,0 +1,86 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🚀 启动器",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/启动器.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "▶ 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "justMyCode": true
+        },
+        {
+            "name": "🔍 Excel 搜索器 (仅 Windows)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/ExcelSearcher_Final.py",
+            "cwd": "${workspaceFolder}/tools",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "📝 语料对齐",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/corpus_tool.py",
+            "cwd": "${workspaceFolder}/tools",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "🔄 TMX 转换",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/tmx_tool.py",
+            "cwd": "${workspaceFolder}/tools",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "📚 术语抽取",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/term extractor.py",
+            "cwd": "${workspaceFolder}/tools",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "📊 Excel 合并",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/表格合并.py",
+            "cwd": "${workspaceFolder}/tools",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "✂️ Excel 拆分",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/表格拆分.py",
+            "cwd": "${workspaceFolder}/tools",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "📐 Excel 重排对齐",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/excel竖排改横排对齐.py",
+            "cwd": "${workspaceFolder}/tools",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "🎨 美术资产对照",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/tools/Asset Management 3.3 with Gemini.py",
+            "cwd": "${workspaceFolder}/tools",
+            "console": "integratedTerminal"
+        }
+    ]
+}

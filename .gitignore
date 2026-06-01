@@ -219,3 +219,23 @@ __marimo__/
 
 # 忽略隐藏的 VS 缓存文件夹
 .vs/
+
+# === GUI 启动器版本追加 ===
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# 旧版本备份（modmanager 内置版本管理产生的，已改用 Git）
+tools/.history/
+core/.history/
+*.bak
+
+# 启动器运行时日志
+日志/*.log
+
+# 用户本地配置（如有需要保留共享配置，可单独 git add）
+# excel_merger_config.json
+# term_config.json
