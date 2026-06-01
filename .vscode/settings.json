@@ -1,0 +1,16 @@
+{
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.history": true,
+        "**/*.pyc": true
+    },
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": false
+    },
+    "python.analysis.extraPaths": ["./tools"],
+    "python.terminal.activateEnvironment": true
+}

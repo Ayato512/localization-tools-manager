@@ -5,7 +5,27 @@ import warnings
 import re
 import logging
 import traceback
-import win32com.client as win32
+
+# win32com 仅在 Windows 上可用；在 Mac/Linux 上加降级提示，避免 import 直接崩溃
+try:
+    import win32com.client as win32
+except ImportError:
+    if sys.platform == "win32":
+        # Windows 上找不到 pywin32，提示装依赖
+        raise ImportError(
+            "本工具需要 pywin32（Windows）。请在终端里运行：\n"
+            "    pip install pywin32\n"
+            "或者双击项目根目录的 “首次安装.bat”。"
+        )
+    # 非 Windows 平台：给个 stub，并在真正调用 Excel 时再报错
+    print(
+        "⚠️  Excel 搜索器依赖 Windows + pywin32 + Excel 应用程序，"
+        "在 Mac/Linux 上无法正常使用。\n"
+        "请在 Windows 电脑上运行本工具。",
+        file=sys.stderr,
+    )
+    win32 = None  # type: ignore
+
 from openpyxl import load_workbook
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, 
                              QLineEdit, QPushButton, QComboBox, QTableWidget, QTableWidgetItem, 
