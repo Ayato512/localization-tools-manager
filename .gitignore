@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# 忽略隐藏的 VS 缓存文件夹
+.vs/

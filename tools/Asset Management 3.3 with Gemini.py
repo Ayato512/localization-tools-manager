@@ -8,7 +8,7 @@ from openai import OpenAI
 class AssetProV74:
     def __init__(self, root):
         self.root = root
-        self.root.title("美术资产对照专家 v7.4 (Precision OCR Edition test)")
+        self.root.title("美术资产对照专家 v7.4 (Precision OCR Edition test1)")
         self.root.geometry("1000x920")
         self.root.configure(bg="#ffffff")
         
